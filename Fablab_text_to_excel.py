@@ -73,7 +73,7 @@ if A == "Y" or A == "y":
     
    
     # specify the destination folder path
-    #Same naming can be used as above 
+    #Same naming can be used as above .utc timestamp works with python datetime.
     destination_folder_path = "C:/Users/NELSON JOSEPH/Desktop/" + Name + "/" + date
     shutil.move(source_path, destination_folder_path)
 else:
