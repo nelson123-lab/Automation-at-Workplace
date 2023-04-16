@@ -66,8 +66,14 @@ source_path = "C:/Users/NELSON JOSEPH/Desktop/New Folder/"+ file_names[0]
 A = input("Have you already 3d printed in Fablab before?")
 if A == "Y" or A == "y":
     date = date.replace('/','-')
+    
+    #Check for the folder already exist
+    #If exists, append the 'Name' with datetime.datetime.now(datetime.timezone.utc) which appends current date time.
     os.mkdir("C:/Users/NELSON JOSEPH/Desktop/" + Name + "/" + date)
+    
+   
     # specify the destination folder path
+    #Same naming can be used as above 
     destination_folder_path = "C:/Users/NELSON JOSEPH/Desktop/" + Name + "/" + date
     shutil.move(source_path, destination_folder_path)
 else:
