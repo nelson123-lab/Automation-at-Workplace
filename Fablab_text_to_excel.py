@@ -77,6 +77,7 @@ if A == "Y" or A == "y":
     destination_folder_path = "C:/Users/NELSON JOSEPH/Desktop/" + Name + "/" + date
     shutil.move(source_path, destination_folder_path)
 else:
+    # The 'Name'string can be appended with datetime.datetime.now(datetime.timezone.utc) which appends current date time.
     destination_folder_path = "C:/Users/NELSON JOSEPH/Desktop/" + Name
     shutil.move(source_path, destination_folder_path)
 
